@@ -33,7 +33,7 @@ async function main() {
 
   // send the increment transaction
   console.log("here");
-  await counterContract.sendIncrease(walletSender);
+  await counterContract.sendIncrement(walletSender);
 
   // wait until confirmed
   let currentSeqno = seqno;
