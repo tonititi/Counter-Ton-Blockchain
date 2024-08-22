@@ -9,7 +9,7 @@ async function main() {
   const client = new TonClient({ endpoint });
 
   // open wallet v4 (notice the correct wallet version here)
-  const mnemonic = process.env.MNEMONIC ?? ""; // your 24 secret words (replace ... with the rest of the words)
+  const mnemonic = process.env.MNEMONIC ?? ""; // your 24 secret words
   const key = await mnemonicToWalletKey(mnemonic.split(" "));
   const wallet = WalletContractV4.create({
     publicKey: key.publicKey,

@@ -21,7 +21,7 @@ async function deploy() {
   }
 
   // open wallet v4 (notice the correct wallet version here)
-  const mnemonic = process.env.MNEMONIC ?? ""; // your 24 secret words (replace ... with the rest of the words)
+  const mnemonic = process.env.MNEMONIC ?? ""; // your 24 secret words
   console.log("mnemonic", mnemonic);
   const key = await mnemonicToWalletKey(mnemonic.split(" "));
 
