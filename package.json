@@ -12,9 +12,16 @@
   "dependencies": {
     "@orbs-network/ton-access": "^2.3.3",
     "@ton-community/func-js": "^0.7.0",
+    "@ton/blueprint": "^0.22.0",
+    "@ton/core": "^0.57.0",
+    "base64url": "^3.0.1",
     "ton": "^13.9.0",
     "ton-core": "^0.53.0",
     "ton-crypto": "^3.2.0",
     "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "@tact-lang/deployer": "^0.2.0",
+    "@types/qs": "^6.9.15"
   }
 }
