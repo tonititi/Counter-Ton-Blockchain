@@ -13,7 +13,8 @@ import { prepareTactDeployment } from "@tact-lang/deployer";
 async function run() {
   // Parameters
   let testnet = true; // Flag for testnet or mainnet
-  let owner = Address.parse("0QAbQZL_8nGZla96MPGFf579mDcFI8Q29PXHC12tk1KmFW1C"); // Our sample contract has an owner
+  const addr = process.env.ADDRESSV4 ?? "";
+  let owner = Address.parse(addr); // Our sample contract has an owner
   const init = await Factory.init(owner); // Create initial data for our contract
 
   // Calculations
